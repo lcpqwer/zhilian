@@ -1,3 +1,15 @@
+<template>
+<div>
+    <div class="a">1111111</div>
+    <div class="b"></div>
+</div>
+    
+</template>
+<script>
+export default {
+    
+}
+</script>
 <style>
     /* @import url('../assets/css/home.css'); */
     .a {
@@ -9,15 +21,3 @@
     background-color: #000;
 }
 </style>
-<template>
-<div>
-    <div class="a">00000000000</div>
-    <div class="b"></div>
-</div>
-    
-</template>
-<script>
-export default {
-    
-}
-</script>
