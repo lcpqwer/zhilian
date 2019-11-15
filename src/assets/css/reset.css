@@ -13,6 +13,11 @@ body {
     max-width: 750px;
     margin: auto;
 }
-body::-webkit-scrollbar {
+#app>div::-webkit-scrollbar {
     display: none;
 }
+
+* {
+    -webkit-text-size-adjust: none;
+}
+

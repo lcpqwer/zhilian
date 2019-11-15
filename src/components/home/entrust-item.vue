@@ -6,7 +6,13 @@
                 VIP{{entrust.level}}
             </div>
             <div class="ent-name">{{entrust.name}}</div>
-
+            <div class="ent-point">
+                <img v-for="index of entrust.point" :key="index" class="entp-img" src="../../assets/img/home/point.png" mode="widthFix" alt="">
+                <!-- <img class="entp-img" src="../../assets/img/home/point.png" mode="widthFix" alt="">
+                <img class="entp-img" src="../../assets/img/home/point.png" mode="widthFix" alt="">
+                <img class="entp-img" src="../../assets/img/home/point.png" mode="widthFix" alt="">
+                <img class="entp-img" src="../../assets/img/home/point.png" mode="widthFix" alt=""> -->
+            </div>
         </div>
     </div>
 </template>
@@ -54,7 +60,17 @@ export default {
         left: 30px;
         text-align: center;
         color: #e9aa42;
-        padding: 5px 0px;
         font-size: 20px;
+        padding-top: 4px;
+    }
+    .ent-point {
+        position: absolute;
+        right: 120px;
+        top: 50%;
+        transform: translate(50%,-50%)
+    }
+    .entp-img {
+        width: 25px;
+        margin: 0 3px;
     }
 </style>

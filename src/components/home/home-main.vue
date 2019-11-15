@@ -1,18 +1,26 @@
 <template>
     <div class="home-main">
         <div class="homain-top">
-            <div class="ht-left">急购专区</div>
+            <div class="ht-left" @click="changePag(0)">急购专区</div>
             <div class="ht-right">
-                <div class="htr-top">自营商城</div>
-                <div class="htr-bottom">发布库存</div>
+                <div class="htr-top" @click="changePag(1)">自营商城</div>
+                <div class="htr-bottom" @click="changePag(2)">发布库存</div>
             </div>
         </div>
-        <div class="homain-bottom">我的商机</div>
+        <div class="homain-bottom" @click="changePag(3)">我的商机</div>
     </div>
 </template>
 <script>
 export default {
-    
+    methods: {
+        changePag(index){
+            switch (index){
+                case 0:
+                    this.$router.push({path:'/hurrybuy'})
+                    break
+            }
+        }
+    }
 }
 </script>
 <style>

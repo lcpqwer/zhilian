@@ -27,7 +27,7 @@
     </div>
 </template>
 <script>
-document.title = '登陆'
+
 export default {
     data() {
         return {
@@ -39,13 +39,14 @@ export default {
       ]
         }
     },
+    created(){
+        document.title = '登陆'
+    },
     methods: {
         login(){
             console.log(this.username)
             console.log(this.password)
-        },
-        a(){
-
+            this.$router.push({path: '/home'})
         }
     }
 }

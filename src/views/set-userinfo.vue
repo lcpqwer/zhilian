@@ -29,15 +29,12 @@ export default {
 }
 </script> 
 <style>
-    .logitem-title {
+    /* .logitem-title {
         font-weight: normal
-    }
-    .logitem-input {
-        font-weight: bold
-    }
-    .login-sub {
+    } */
+    /* .login-sub {
         height: 230px;
-    }
+    } */
     .user-head {
         width: 120px;
         height: 120px;
