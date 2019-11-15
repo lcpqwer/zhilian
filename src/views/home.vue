@@ -1,23 +1,41 @@
 <template>
 <div>
-    <div class="a">1111111</div>
-    <div class="b"></div>
+    <headSearch/>
+    <homeMain/>
+    <div class="h-entrust-title">委托找料</div>
+    <entrustItem v-for="(item, index) in entrus" :key="index" :entrust="item"/>
 </div>
     
 </template>
 <script>
+document.title = '联置'
+import headSearch from '../components/home/home-search'
+import homeMain from '../components/home/home-main'
+import entrustItem from '../components/home/entrust-item'
 export default {
-    
+    data() {
+        return {
+            entrus: [{name: '供应商1', head: '../../assets/img/login/userhead.png', point: 1, level: 3},
+                    {name: '供应商2', head: '../../assets/img/login/userhead.png', point: 4, level: 2},
+                    {name: '供应商3', head: '../../assets/img/login/userhead.png', point: 5, level: 5},
+                    {name: '供应商4', head: '../../assets/img/login/userhead.png', point: 5, level: 4},
+                    {name: '供应商5', head: '../../assets/img/login/userhead.png', point: 2, level: 5}]
+        }
+    },
+    components: {
+        headSearch,
+        homeMain,
+        entrustItem
+    }
 }
 </script>
 <style>
-    /* @import url('../assets/css/home.css'); */
-    .a {
-        font-size: 75px
+    .h-entrust-title {
+        height: 80px;
+        margin-top: 25px;
+        line-height: 80px;
+        font-size: 30px;
+        text-indent: 40px;
+        font-weight: bold;
     }
-    .b {
-    width: 750px;
-    height: 100px;
-    background-color: #000;
-}
 </style>

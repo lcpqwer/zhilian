@@ -1,0 +1,18 @@
+input, button {
+    outline: none;
+    list-style: none;
+    border: none;
+}
+
+body,html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 750px;
+    margin: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
+}

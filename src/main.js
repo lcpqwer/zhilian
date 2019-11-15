@@ -10,8 +10,13 @@ import 'iview/dist/styles/iview.css'
 import 'lib-flexible'
 
 Vue.use(iView)
+import Vant from 'vant'
+import 'vant/lib/index.css'
+Vue.use(Vant)
 import './assets/css/home.css'
-
+import './assets/css/reset.css'
+import './assets/css/login.css'
+import './assets/css/register.css'
 Vue.config.productionTip = false
 Vue.prototype.axios = axios
 import qs from 'qs'

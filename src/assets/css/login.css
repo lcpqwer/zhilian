@@ -1,0 +1,82 @@
+.login-logo {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.log-logo {
+    width: 240px;
+    height: 65px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.login-item {
+    width: 750px;
+    height: 135px;
+    position: relative;
+}
+.logitem-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    left: 40px;
+}
+.logitem-input {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    width: 580px;
+    height: 90px;
+    border: none;
+    background-color: #f8f6f4;
+    border-radius: 10px;
+    text-indent: 20px;
+    font-size: 30px;
+    outline: none;
+}
+.login-sub {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.login-btn {
+    width: 670px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f6b234;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.other-login {
+    margin-top: 140px;
+    height: 90px;
+    width: 100%;
+    padding: 0 40px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 30px;
+}
+.wx-login {
+    width: 100%;
+    height: 122px;
+    position: relative;
+}
+.wx-img {
+    height: 75px;
+    width: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
