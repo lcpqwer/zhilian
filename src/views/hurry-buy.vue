@@ -4,7 +4,7 @@
         <div class="hub"></div>
         <div v-if="release" class="hub-bottom">
             <div class="hub-item shi" @click="showReal">实单</div>
-            <div class="hub-item xun">询价</div>
+            <div class="hub-item xun" @click="showInqu">询价</div>
         </div>
         <div v-if="realbool" class="uphub-warpper shi">
             <div class="uphub-title">
@@ -13,18 +13,39 @@
             </div>
             <div class="uphub-input">
                 <div class="title">型号<span style="color:red">*</span></div>
-                <input type="text" class="input" placeholder="请输入需要的产品型号(必填)">
+                <input type="text" class="input shi-input" placeholder="请输入需要的产品型号(必填)">
             </div>
             <div class="uphub-input">
                 <div class="title">数量<span style="color:red">*</span></div>
-                <input type="text" class="input" placeholder="请输入需要的产品数量(必填)">
+                <input type="text" class="input shi-input" placeholder="请输入需要的产品数量(必填)">
             </div>
             <div class="uphub-input price">
                 <div class="title">价格</div>
-                <input type="text" class="input" placeholder="请输入未税单价(选填)">
+                <input type="text" class="input shi-input" placeholder="请输入未税单价(选填)">
             </div>
             <div class="uphub-sub">
-                <button class="sub">发送</button>
+                <button class="sub shi-sub">发送</button>
+            </div>
+        </div>
+        <div v-if="inquirybool" class="uphub-warpper xun">
+            <div class="uphub-title">
+                询价
+                <img @click="hideInqu" class="uphub-img" src="../assets/img/hurrybuy/hide.png" alt="">
+            </div>
+            <div class="uphub-input">
+                <div class="title">型号<span style="color:red">*</span></div>
+                <input type="text" class="input xun-input" placeholder="请输入需要的产品型号(必填)">
+            </div>
+            <div class="uphub-input">
+                <div class="title">数量<span style="color:red">*</span></div>
+                <input type="text" class="input xun-input" placeholder="请输入需要的产品数量(必填)">
+            </div>
+            <div class="uphub-input price">
+                <div class="title">价格</div>
+                <input type="text" class="input xun-input" placeholder="请输入未税单价(选填)">
+            </div>
+            <div class="uphub-sub">
+                <button class="sub xun-sub">发送</button>
             </div>
         </div>
     </div>
@@ -65,6 +86,14 @@ export default {
         },
         hideReal(){
             this.realbool = false;
+            this.release = true;
+        },
+        showInqu(){
+            this.release = false;
+            this.inquirybool = true;
+        },
+        hideInqu(){
+            this.inquirybool = false;
             this.release = true;
         }
     }
@@ -135,10 +164,15 @@ export default {
         width: 570px;
         right: 40px;
         height: 90px;
-        background-color: #f8bf9c;
         border-radius: 10px;
         text-indent: 20px;
         font-size: 25px;
+    }
+    .shi-input {
+        background-color: #f8bf9c;
+    }
+    .xun-input {
+        background-color: #fad8a1;
     }
     .uphub-warpper .price {
         margin-top: 10px;
@@ -152,7 +186,6 @@ export default {
         width: 240px;
         height: 100px;
         line-height: 100px;
-        color: #f17f3a;
         text-align: center;
         font-size: 35px;
         position: absolute;
@@ -161,5 +194,11 @@ export default {
         transform: translateY(-50%);
         border-radius: 10px;
         background-color: white;
+    }
+    .shi-sub {
+        color: #f17f3a;
+    }
+    .xun-sub {
+        color: #f6b243;
     }
 </style>

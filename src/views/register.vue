@@ -1,5 +1,8 @@
 <template>
     <div>
+        <!-- <input id="upload" type="file" accept="image/*" class="abc"> -->
+        <!-- <input id="upload" type="file" accept="image/*" capture="camera" class="abc"> -->
+        <!-- <input id="upload" type="file" accept="image/*" class="abc"> -->
         <div class="login-logo">
             <img class="log-logo" src="../assets/img/login/logo2.png" alt="logo">
         </div>
@@ -41,11 +44,14 @@ export default {
         }
     },
     created(){
-        document.title = '注册'
+        document.title = '注册';
+        
     },
     methods: {
         register(){
-            document.title = '123'
+            let a = document.getElementById('upload')
+        console.log(a)
+        a.click()
         },
         toLogin(){
             this.$router.push({path: '/login'})
