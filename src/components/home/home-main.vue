@@ -28,10 +28,13 @@ export default {
         changePag(index){
             switch (index){
                 case 0:
-                    this.$router.push({path:'/hurrybuy'})
+                    this.$router.push({path:'/Hurrybuy'})
                     break
                 case 2:
-                    this.$router.push({path:'/my-inventory'})
+                    this.$router.push({path:'/MyInventory'})
+                    break
+                case 3:
+                    this.$router.push({path:'/Business'})
                     break
             }
         }
@@ -69,7 +72,7 @@ export default {
         margin-top: 10px;
     }
     .homain-bottom {
-        width: 100%;
+        width: 670px;
         height: 185px;
         margin-top: 40px;
     }
@@ -102,7 +105,7 @@ export default {
     .htr-top>div, .htr-bottom>div {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 30px;
         transform: translateY(-50%);
         z-index: 10;
         font-size: 30px;

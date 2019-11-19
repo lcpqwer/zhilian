@@ -1,13 +1,17 @@
 <template>
     <div>
-        <div class="in-btn">立即上传</div>
+        <div class="in-btn" @click="upload">立即上传</div>
         <div class="in-message">消息</div>
         <div class="in-home">首页</div>
     </div>
 </template>
 <script>
 export default {
-    
+    methods: {
+        upload(){
+            this.$router.push({path: '/UpInventory'})
+        }
+    }
 }
 </script>
 <style>

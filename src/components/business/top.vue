@@ -1,10 +1,12 @@
 <template>
+<div class="sea-warpper">
     <div class="sea-main">
         <div>
             <input type="text" class="sea-input" placeholder="搜索型号">
             <img src="../../assets/img/home/search.png" class="sea-img" alt="">
         </div>
     </div>
+</div>
 </template>
 <script>
 export default {
@@ -14,7 +16,7 @@ export default {
 <style scoped>
     .sea-warpper {
         width: 100%;
-        height: 110px;
+        height: 185px;
     }
     .sea-main {
         width: 100%;

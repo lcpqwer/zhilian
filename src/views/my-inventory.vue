@@ -1,5 +1,5 @@
 <template>
-<div class="content">
+<div class="body">
     <inSearch/>
     <inTitle/>
     <div class="in-top"></div>

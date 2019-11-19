@@ -25,7 +25,7 @@ export default {
 </script>
 <style>
     .entrust-warpper {
-        width: 100%;
+        width: 670px;
         height: 170px;
         padding: 0 40px;
     }

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="body">
         <img class="user-head" src="../assets/img/login/userhead.png" alt="">
         <div class="ushead-text">头像</div>
         <div class="login-item">

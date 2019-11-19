@@ -1,20 +1,32 @@
 <template>
-    <div class="search-warpper">
-        <input class="se-input" type="text" placeholder="请输入型号">
-        <div class="sea-warpper">
-           <div>
-               <img model="widthFix" src="../../assets/img/home/search.png" alt="">
-           </div>
+    <div class="sea">
+        <div class="search-warpper">
+            <input class="se-input" type="text" placeholder="请输入型号">
+            <img model="widthFix" class="sea-img" src="../../assets/img/home/search.png" alt="">
+            <img class="home-user" @click="toUser" src="../../assets/img/home/user.png" model="widthFix" alt="">
         </div>
-        <img class="home-user" src="../../assets/img/home/user.png" model="widthFix" alt="">
     </div>
 </template>
-<script>
+<script> 
 export default {
-    
+    methods: {
+        toUser(){
+            this.$router.push({path: '/User'})
+        }
+    }
 }
 </script>
 <style>
+    .sea {
+        height: 143px;
+        width: 750px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+        background-color: #fff;
+    }
     .search-warpper {
         height: 143px;
         width: 100%;
@@ -23,7 +35,7 @@ export default {
     }
     .se-input {
         height: 64px;
-        width: 580px;
+        width:  500px;
         padding-left: 80px;
         background-color: #f8f6f4;
         border: none;
@@ -34,23 +46,13 @@ export default {
         left: 40px;
         border-radius: 10px;
     }
-    .sea-warpper {
-        width: 80px;
-        height: 100%;
-        position: absolute;
-        left: 40px;
-    }
-    .sea-warpper>div{
-        height: 100%;
-        width: 100%;
-        position: relative;
-    }
-    .sea-warpper>div>img {
+    .sea-img {
         width: 45px;
+        height: 45px;
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%)
+        transform: translateY(-50%);
+        left:58px;
     }
     .home-user {
         position: absolute;

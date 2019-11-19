@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="body">
         <hurryItem v-for="(item,index) in hurryInfo" :key="index" :hurryInfo="item"/>
         <div class="hub"></div>
         <div v-if="release" class="hub-bottom">
@@ -70,7 +70,8 @@ export default {
             // 实单信息填写面板
             realbool: false,
             // 询价信息填写面板
-            inquirybool: false
+            inquirybool: false,
+            // 下拉加载
         }
     },
     components: {
@@ -95,17 +96,22 @@ export default {
         hideInqu(){
             this.inquirybool = false;
             this.release = true;
+        },
+        onRefresh(){
+            console.log(1)
         }
     }
 }
 </script>
 <style>
     .hub-bottom {
-        width: 100%;
+        width: 750px;
         height: 90px;
         /* background-color: black; */
         position: fixed;
         bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
         flex-direction: row;
     }
@@ -121,10 +127,12 @@ export default {
         height: 150px;
     }
     .uphub-warpper {
-        width: 100%;
+        width: 750px;
         height: 640px;
         position: fixed;
         bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -167,6 +175,10 @@ export default {
         border-radius: 10px;
         text-indent: 20px;
         font-size: 25px;
+        color: #000
+    }
+    .uphub-input>.input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
+        color: rgba(255,255,255,0.7);
     }
     .shi-input {
         background-color: #f8bf9c;

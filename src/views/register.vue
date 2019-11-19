@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <!-- <input id="upload" type="file" accept="image/*" class="abc"> -->
+    <div class="body">
+        <!-- <input id="upload" type="file" accept="image/*" class="abc" -->
         <!-- <input id="upload" type="file" accept="image/*" capture="camera" class="abc"> -->
         <!-- <input id="upload" type="file" accept="image/*" class="abc"> -->
         <div class="login-logo">
@@ -54,7 +54,7 @@ export default {
         a.click()
         },
         toLogin(){
-            this.$router.push({path: '/login'})
+            this.$router.push({path: '/Login'})
         }
     }
 }

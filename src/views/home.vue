@@ -1,6 +1,7 @@
 <template>
-<div>
+<div class="body">
     <headSearch/>
+    <div class="top"></div>
     <homeMain/>
     <div class="h-entrust-title">委托找料</div>
     <entrustItem v-for="(item, index) in entrus" :key="index" :entrust="item"/>
@@ -24,6 +25,10 @@ export default {
                     {name: '供应商2', head: '../../assets/img/login/userhead.png', point: 4, level: 2},
                     {name: '供应商3', head: '../../assets/img/login/userhead.png', point: 5, level: 5},
                     {name: '供应商4', head: '../../assets/img/login/userhead.png', point: 5, level: 4},
+                    {name: '供应商1', head: '../../assets/img/login/userhead.png', point: 1, level: 3},
+                    {name: '供应商2', head: '../../assets/img/login/userhead.png', point: 4, level: 2},
+                    {name: '供应商3', head: '../../assets/img/login/userhead.png', point: 5, level: 5},
+                    {name: '供应商4', head: '../../assets/img/login/userhead.png', point: 5, level: 4},
                     {name: '供应商5', head: '../../assets/img/login/userhead.png', point: 2, level: 5}]
         }
     },
@@ -34,10 +39,17 @@ export default {
         headSearch,
         homeMain,
         entrustItem
+    },
+    methods: {
+
     }
 }
 </script>
 <style>
+.top {
+    height: 143px;
+    width: 750px;
+}
     .h-entrust-title {
         height: 80px;
         margin-top: 25px;

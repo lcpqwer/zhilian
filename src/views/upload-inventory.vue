@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="body">
         <div class="in-input-warpper first"> 
             <div class="title">型号<span>*</span></div>
             <input type="text" class="input" placeholder="请输入产品型号">
@@ -27,8 +27,8 @@
             <button class="ba-left">批量上传</button>
             <button class="ba-right">下载批量模板</button>
         </div>
-        <div class="in-message">消息</div>
-        <div class="in-home">首页</div>
+        <div class="in-message in-mes">消息</div>
+        <div class="in-home in-hom">首页</div>
     </div>   
 </template>
 <script>
@@ -147,11 +147,11 @@ export default {
         right: 40px;
         z-index: 10;
     }
-    .in-message {
+    .in-mes {
         bottom: 120px;
         
     }
-    .in-home {
+    .in-hom {
         bottom: 40px;
     }
 </style>

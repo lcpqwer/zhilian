@@ -8,7 +8,10 @@ body,html {
     padding: 0;
     margin: 0;
 }
-
+#app {
+    width: 750px;
+    height: 100%;
+}
 body {
     max-width: 750px;
     margin: auto;
@@ -20,4 +23,18 @@ body {
 * {
     -webkit-text-size-adjust: none;
 }
+.body {
+    width: 750px;height: 100%;
+}
 
+::-webkit-scrollbar {
+    width: 0 !important;
+}
+::-webkit-scrollbar {
+    width: 0 !important;height: 0;
+}
+
+.main {
+    width: 670px;
+    padding: 0 40px;
+}

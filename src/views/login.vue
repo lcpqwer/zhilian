@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="body">
         <div class="login-logo">
             <img class="log-logo" src="../assets/img/login/logo2.png" alt="logo">
         </div>
@@ -46,7 +46,7 @@ export default {
         login(){
             console.log(this.username)
             console.log(this.password)
-            this.$router.push({path: '/home'})
+            this.$router.push({path: '/Home'})
         }
     }
 }

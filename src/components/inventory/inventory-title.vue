@@ -10,7 +10,7 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
     .in-title {
         width: 100%;
         padding: 0 40px;
