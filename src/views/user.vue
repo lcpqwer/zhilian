@@ -43,37 +43,36 @@
 <script>
 import Bottom from '../components/tohome1'
 export default {
-    created(){
-        document.title = '个人信息'
-    },
-    components: {
-        Bottom
-    },
-    methods: {
-        userClick(index){
-            switch(index){
-                case 0:
-                    this.$router.push({path: '/MyInfo'})
-                    break;
-                case 1:
-                    this.$router.push({path: '/MyInventory'})
-                    break;
-                case 2:
-                    this.$router.push({path: '/OrderList'})
-                    break; 
-                case 3:
-                    this.$router.push({path: '/MyUpload'})
-                    break;
-                case 4:
-                    this.$router.push({path: '/Business'})
-                    break;  
-                case 5:
-                    this.$router.push({path: '/MyAddress'})
-                    break;
-            }
-            
-        }
+  created () {
+    document.title = '个人信息'
+  },
+  components: {
+    Bottom
+  },
+  methods: {
+    userClick (index) {
+      switch (index) {
+        case 0:
+          this.$router.push({path: '/MyInfo'})
+          break
+        case 1:
+          this.$router.push({path: '/MyInventory'})
+          break
+        case 2:
+          this.$router.push({path: '/OrderList'})
+          break
+        case 3:
+          this.$router.push({path: '/MyUpload'})
+          break
+        case 4:
+          this.$router.push({path: '/Business'})
+          break
+        case 5:
+          this.$router.push({path: '/MyAddress'})
+          break
+      }
     }
+  }
 }
 </script>
 <style>

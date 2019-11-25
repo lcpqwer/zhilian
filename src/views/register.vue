@@ -23,7 +23,7 @@
             <div class="logitem-title">
                 &ensp;密码
             </div>
-            <input v-model="password" class="logitem-input register-input" type="text" placeholder="请设置6-18位数字&英文字母密码">
+            <input style="padding-top: 2px" v-model="password" class="logitem-input register-input" type="text" placeholder="请设置6-18位数字&英文字母密码">
         </div>
         <div class="reg-agree">
             <img class="reg-agree-img" src="../assets/img/login/ok.png" alt="">
@@ -37,26 +37,25 @@
 </template>
 <script>
 export default {
-    data() {
-        return {
-            username: '',
-            password: ''
-        }
-    },
-    created(){
-        document.title = '注册';
-        
-    },
-    methods: {
-        register(){
-            let a = document.getElementById('upload')
-        console.log(a)
-        a.click()
-        },
-        toLogin(){
-            this.$router.push({path: '/Login'})
-        }
+  data () {
+    return {
+      username: '',
+      password: ''
     }
+  },
+  created () {
+    document.title = '注册'
+  },
+  methods: {
+    register () {
+      let a = document.getElementById('upload')
+      console.log(a)
+      a.click()
+    },
+    toLogin () {
+      this.$router.push({path: '/Login'})
+    }
+  }
 }
 </script>
 <style>

@@ -15,14 +15,14 @@
 </template>
 <script>
 export default {
-    props: {
-        HcItem: Object 
-    },
-    methods: {
-        toChat(){
-            this.$router.push({path: '/Chat'})
-        }
+  props: {
+    HcItem: Object
+  },
+  methods: {
+    toChat () {
+      this.$router.push({path: '/Chat'})
     }
+  }
 }
 </script>
 <style scoped>
@@ -55,7 +55,7 @@ export default {
         right: 40px;
     }
     .sd {
-        color: #f17f3a 
+        color: #f17f3a
     }
     .h-time{
         width: 100%;

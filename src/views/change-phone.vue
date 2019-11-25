@@ -16,9 +16,9 @@
 </template>
 <script>
 export default {
-    created(){
-        document.title = '更换手机号'
-    },
+  created () {
+    document.title = '更换手机号'
+  }
 }
 </script>
 <style scoped>

@@ -13,24 +13,24 @@
         </div>
         <button @click="toEdit" class="edit-btn">编辑地址</button>
         <Bottom/>
-    </div>    
+    </div>
 </template>
 <script>
 import Bottom from '../components/tohome2'
 export default {
-    created(){
-        document.title = '地址管理'
-    },
-    components: {
-        Bottom
-    },
-    methods: {
-        toEdit() {
-            this.$router.push({
-                path: '/EditAddress'
-            })
-        }
+  created () {
+    document.title = '地址管理'
+  },
+  components: {
+    Bottom
+  },
+  methods: {
+    toEdit () {
+      this.$router.push({
+        path: '/EditAddress'
+      })
     }
+  }
 }
 </script>
 <style scoped>

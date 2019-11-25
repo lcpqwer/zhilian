@@ -29,28 +29,28 @@
 <script>
 
 export default {
-    data() {
-        return {
-            username: '',
-            password: '',
-            images: [
+  data () {
+    return {
+      username: '',
+      password: '',
+      images: [
         'https://img.yzcdn.cn/vant/apple-1.jpg',
         'https://img.yzcdn.cn/vant/apple-2.jpg'
       ]
-        }
-    },
-    created(){
-        document.title = '登陆'
-    },
-    methods: {
-        login(){
-            console.log(this.username)
-            console.log(this.password)
-            this.$router.push({path: '/Home'})
-        }
     }
+  },
+  created () {
+    document.title = '登陆'
+  },
+  methods: {
+    login () {
+      console.log(this.username)
+      console.log(this.password)
+      this.$router.push({path: '/Home'})
+    }
+  }
 }
 </script>
 <style>
-    
+
 </style>

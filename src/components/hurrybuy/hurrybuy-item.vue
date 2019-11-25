@@ -31,10 +31,10 @@ export default {
   props: {
     hurryInfo: Object
   },
-  data() {
-    return {};
+  data () {
+    return {}
   }
-};
+}
 </script>
 <style>
 .message-warpper {

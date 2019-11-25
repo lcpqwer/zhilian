@@ -1,22 +1,22 @@
 <template>
     <div class="body">
-        <div class="in-input-warpper first"> 
+        <div class="in-input-warpper first">
             <div class="title">型号<span>*</span></div>
             <input type="text" class="input" placeholder="请输入产品型号">
         </div>
-        <div class="in-input-warpper"> 
+        <div class="in-input-warpper">
             <div class="title">数量<span>*</span></div>
             <input type="text" class="input" placeholder="请输入产品数量">
         </div>
-        <div class="in-input-warpper"> 
+        <div class="in-input-warpper">
             <div class="title">价格</div>
             <input type="text" class="input" placeholder="请输入产品未税单价">
         </div>
-        <div class="in-input-warpper"> 
+        <div class="in-input-warpper">
             <div class="title">货期<span>*</span></div>
             <input type="text" class="input" placeholder="请输入货期">
         </div>
-        <div class="in-input-warpper"> 
+        <div class="in-input-warpper">
             <div class="title">是否持续备货</div>
             <button class="stock">是</button>
             <button class="no-stock">否</button>
@@ -28,17 +28,17 @@
             <button class="ba-right">下载批量模板</button>
         </div>
         <Bottom/>
-    </div>   
+    </div>
 </template>
 <script>
 import Bottom from '../components/tohome1'
 export default {
-    created(){
-        document.title = '发布库存'
-    },
-    components: {
-        Bottom
-    }
+  created () {
+    document.title = '发布库存'
+  },
+  components: {
+    Bottom
+  }
 }
 </script>
 <style>
@@ -114,7 +114,7 @@ export default {
     .batch {
         width: 100%;
         position: relative;
-        
+
     }
     .ba-left, .ba-right {
         font-size: 30px;

@@ -9,9 +9,9 @@
 </template>
 <script>
 export default {
-    props: {
-        inItem: Object
-    }
+  props: {
+    inItem: Object
+  }
 }
 </script>
 <style>
@@ -35,7 +35,8 @@ export default {
     }
     .number>input {
         width: 120px;
-        height: 40px;
+        height: 38px;
+        padding-top: 2px;
         position: absolute;
         top: 50%;
         left: 50%;

@@ -5,11 +5,11 @@
 </template>
 <script>
 export default {
-    methods: {
-        upload(){
-            this.$router.push({path: '/UpInventory'})
-        }
+  methods: {
+    upload () {
+      this.$router.push({path: '/UpInventory'})
     }
+  }
 }
 </script>
 <style>

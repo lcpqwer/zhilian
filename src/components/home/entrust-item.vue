@@ -18,9 +18,9 @@
 </template>
 <script>
 export default {
-    props:{
-        entrust: Object
-    }
+  props: {
+    entrust: Object
+  }
 }
 </script>
 <style>
@@ -28,6 +28,7 @@ export default {
         width: 670px;
         height: 170px;
         padding: 0 40px;
+        margin-bottom: 20px;
     }
     .entrust-warpper>div {
         width: 100%;

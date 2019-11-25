@@ -39,95 +39,95 @@ import Top from '../components/order-list/top'
 import OrderItem from '../components/order-list/order-item'
 import Bottom from '../components/tohome1'
 export default {
-    data(){
-        return {
-            pag: 0,
-            orderList: [
-                {model: '90575-1010', num: 100, price: 9.3, state: 0},
-                {model: '90575-1010', num: 101, price: 9.3, state: 1},
-                {model: '90575-1010', num: 102, price: 9.3, state: 0},
-                {model: '90575-1010', num: 103, price: 9.3, state: 2},
-                {model: '90575-1010', num: 104, price: 9.3, state: 0},
-                {model: '90575-1010', num: 105, price: 9.3, state: 2},
-                {model: '90575-1010', num: 106, price: 9.3, state: 1},
-                {model: '90575-1010', num: 107, price: 9.3, state: 3},
-                {model: '90575-1010', num: 108, price: 9.3, state: 2},
-                {model: '90575-1010', num: 109, price: 9.3, state: 1},
-                {model: '90575-1010', num: 100, price: 9.3, state: 0},
-                {model: '90575-1010', num: 140, price: 9.3, state: 2},
-                {model: '90575-1010', num: 141, price: 9.3, state: 1},
-                {model: '90575-1010', num: 142, price: 9.3, state: 1},
-                {model: '90575-1010', num: 60, price: 9.3, state: 2},
-                {model: '90575-1010', num: 61, price: 9.3, state: 0},
-                {model: '90575-1010', num: 79, price: 9.3, state: 1},
-                {model: '90575-1010', num: 12, price: 9.3, state: 0},
-            ],
-            order0: [
-                {model: '90575-1010', num: 100, price: 9.3, state: 0},
-                {model: '90575-1010', num: 101, price: 9.3, state: 0},
-                {model: '90575-1010', num: 120, price: 9.3, state: 0},
-                {model: '90575-1010', num: 122, price: 9.3, state: 0},
-                {model: '90575-1010', num: 1000, price: 9.3, state: 0},
-                {model: '90575-1010', num: 200, price: 9.3, state: 0},
-                {model: '90575-1010', num: 234, price: 9.3, state: 0},
-                {model: '90575-1010', num: 1230, price: 9.3, state: 0},
-                {model: '90575-1010', num: 2330, price: 9.3, state: 0},
-                {model: '90575-1010', num: 112, price: 9.3, state: 0},
-                {model: '90575-1010', num: 123, price: 9.3, state: 0},
-                {model: '90575-1010', num: 1320, price: 9.3, state: 0},
-                {model: '90575-1010', num: 1431, price: 9.3, state: 0},
-                {model: '90575-1010', num: 1412, price: 9.3, state: 0},
-                {model: '90575-1010', num: 4211, price: 9.3, state: 0},
-            ],
-            order1: [
-                {model: '90575-1010', num: 100, price: 9.3, state: 1},
-                {model: '90575-1010', num: 101, price: 9.3, state: 1},
-                {model: '90575-1010', num: 120, price: 9.3, state: 1},
-                {model: '90575-1010', num: 122, price: 9.3, state: 1},
-                {model: '90575-1010', num: 1000, price: 9.3, state: 1},
-                {model: '90575-1010', num: 200, price: 9.3, state: 1},
-                {model: '90575-1010', num: 234, price: 9.3, state: 1},
-                {model: '90575-1010', num: 1230, price: 9.3, state: 1},
-                {model: '90575-1010', num: 2330, price: 9.3, state: 1},
-                {model: '90575-1010', num: 112, price: 9.3, state: 1},
-                {model: '90575-1010', num: 123, price: 9.3, state: 1},
-                {model: '90575-1010', num: 1320, price: 9.3, state: 1},
-                {model: '90575-1010', num: 1431, price: 9.3, state: 1},
-                {model: '90575-1010', num: 1412, price: 9.3, state: 1},
-                {model: '90575-1010', num: 4211, price: 9.3, state: 1},
-            ],
-            order2: [
-                {model: '90575-1010', num: 100, price: 9.3, state: 2},
-                {model: '90575-1010', num: 101, price: 9.3, state: 2},
-                {model: '90575-1010', num: 120, price: 9.3, state: 2},
-                {model: '90575-1010', num: 122, price: 9.3, state: 2},
-                {model: '90575-1010', num: 1000, price: 9.3, state: 2},
-                {model: '90575-1010', num: 200, price: 9.3, state: 2},
-                {model: '90575-1010', num: 234, price: 9.3, state: 2},
-                {model: '90575-1010', num: 1230, price: 9.3, state: 2},
-                {model: '90575-1010', num: 2330, price: 9.3, state: 2},
-                {model: '90575-1010', num: 112, price: 9.3, state: 2},
-                {model: '90575-1010', num: 123, price: 9.3, state: 2},
-                {model: '90575-1010', num: 1320, price: 9.3, state: 2},
-                {model: '90575-1010', num: 1431, price: 9.3, state: 2},
-                {model: '90575-1010', num: 1412, price: 9.3, state: 2},
-                {model: '90575-1010', num: 4211, price: 9.3, state: 2},
-            ]
-        }
-    },
-    components: {
-        Top,
-        OrderItem,
-        Bottom
-    },
-    created(){
-        document.title = '我的订单'
-    },
-    methods: {
-        changePag(index) {
-            this.pag = index
-        }
+  data () {
+    return {
+      pag: 0,
+      orderList: [
+        {model: '90575-1010', num: 100, price: 9.3, state: 0},
+        {model: '90575-1010', num: 101, price: 9.3, state: 1},
+        {model: '90575-1010', num: 102, price: 9.3, state: 0},
+        {model: '90575-1010', num: 103, price: 9.3, state: 2},
+        {model: '90575-1010', num: 104, price: 9.3, state: 0},
+        {model: '90575-1010', num: 105, price: 9.3, state: 2},
+        {model: '90575-1010', num: 106, price: 9.3, state: 1},
+        {model: '90575-1010', num: 107, price: 9.3, state: 3},
+        {model: '90575-1010', num: 108, price: 9.3, state: 2},
+        {model: '90575-1010', num: 109, price: 9.3, state: 1},
+        {model: '90575-1010', num: 100, price: 9.3, state: 0},
+        {model: '90575-1010', num: 140, price: 9.3, state: 2},
+        {model: '90575-1010', num: 141, price: 9.3, state: 1},
+        {model: '90575-1010', num: 142, price: 9.3, state: 1},
+        {model: '90575-1010', num: 60, price: 9.3, state: 2},
+        {model: '90575-1010', num: 61, price: 9.3, state: 0},
+        {model: '90575-1010', num: 79, price: 9.3, state: 1},
+        {model: '90575-1010', num: 12, price: 9.3, state: 0}
+      ],
+      order0: [
+        {model: '90575-1010', num: 100, price: 9.3, state: 0},
+        {model: '90575-1010', num: 101, price: 9.3, state: 0},
+        {model: '90575-1010', num: 120, price: 9.3, state: 0},
+        {model: '90575-1010', num: 122, price: 9.3, state: 0},
+        {model: '90575-1010', num: 1000, price: 9.3, state: 0},
+        {model: '90575-1010', num: 200, price: 9.3, state: 0},
+        {model: '90575-1010', num: 234, price: 9.3, state: 0},
+        {model: '90575-1010', num: 1230, price: 9.3, state: 0},
+        {model: '90575-1010', num: 2330, price: 9.3, state: 0},
+        {model: '90575-1010', num: 112, price: 9.3, state: 0},
+        {model: '90575-1010', num: 123, price: 9.3, state: 0},
+        {model: '90575-1010', num: 1320, price: 9.3, state: 0},
+        {model: '90575-1010', num: 1431, price: 9.3, state: 0},
+        {model: '90575-1010', num: 1412, price: 9.3, state: 0},
+        {model: '90575-1010', num: 4211, price: 9.3, state: 0}
+      ],
+      order1: [
+        {model: '90575-1010', num: 100, price: 9.3, state: 1},
+        {model: '90575-1010', num: 101, price: 9.3, state: 1},
+        {model: '90575-1010', num: 120, price: 9.3, state: 1},
+        {model: '90575-1010', num: 122, price: 9.3, state: 1},
+        {model: '90575-1010', num: 1000, price: 9.3, state: 1},
+        {model: '90575-1010', num: 200, price: 9.3, state: 1},
+        {model: '90575-1010', num: 234, price: 9.3, state: 1},
+        {model: '90575-1010', num: 1230, price: 9.3, state: 1},
+        {model: '90575-1010', num: 2330, price: 9.3, state: 1},
+        {model: '90575-1010', num: 112, price: 9.3, state: 1},
+        {model: '90575-1010', num: 123, price: 9.3, state: 1},
+        {model: '90575-1010', num: 1320, price: 9.3, state: 1},
+        {model: '90575-1010', num: 1431, price: 9.3, state: 1},
+        {model: '90575-1010', num: 1412, price: 9.3, state: 1},
+        {model: '90575-1010', num: 4211, price: 9.3, state: 1}
+      ],
+      order2: [
+        {model: '90575-1010', num: 100, price: 9.3, state: 2},
+        {model: '90575-1010', num: 101, price: 9.3, state: 2},
+        {model: '90575-1010', num: 120, price: 9.3, state: 2},
+        {model: '90575-1010', num: 122, price: 9.3, state: 2},
+        {model: '90575-1010', num: 1000, price: 9.3, state: 2},
+        {model: '90575-1010', num: 200, price: 9.3, state: 2},
+        {model: '90575-1010', num: 234, price: 9.3, state: 2},
+        {model: '90575-1010', num: 1230, price: 9.3, state: 2},
+        {model: '90575-1010', num: 2330, price: 9.3, state: 2},
+        {model: '90575-1010', num: 112, price: 9.3, state: 2},
+        {model: '90575-1010', num: 123, price: 9.3, state: 2},
+        {model: '90575-1010', num: 1320, price: 9.3, state: 2},
+        {model: '90575-1010', num: 1431, price: 9.3, state: 2},
+        {model: '90575-1010', num: 1412, price: 9.3, state: 2},
+        {model: '90575-1010', num: 4211, price: 9.3, state: 2}
+      ]
     }
+  },
+  components: {
+    Top,
+    OrderItem,
+    Bottom
+  },
+  created () {
+    document.title = '我的订单'
+  },
+  methods: {
+    changePag (index) {
+      this.pag = index
+    }
+  }
 }
 </script>
 <style scoped>

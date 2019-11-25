@@ -55,55 +55,55 @@
 import hurryItem from '../components/hurrybuy/hurrybuy-item'
 import Bottom from '../components/tohome2'
 export default {
-    data(){
-        return {
-            hurryInfo: [
-                {model: '98575-2858', num: 10000, time: '上午 11:00', type: '1', user: '2'},
-                {model: '92575-2876', num: 10000, time: '上午 10:00', type: '2', user: '2'},
-                {model: '98375-2656', num: 10000, time: '上午 09:00', type: '1', user: '2'},
-                {model: '98575-5856', num: 10000, time: '上午 11:00', type: '2', user: '1'},
-                {model: '98755-4856', num: 10000, time: '上午 05:00', type: '2', user: '2'},
-                {model: '98565-2356', num: 10000, time: '上午 11:00', type: '1', user: '2'},
-                {model: '98775-2826', num: 10000, time: '下午 13:00', type: '2', user: '1'},
-                {model: '98875-2851', num: 10000, time: '上午 11:00', type: '1', user: '2'}
-            ],
-            // 底部点击发布栏
-            release: true,
-            // 实单信息填写面板
-            realbool: false,
-            // 询价信息填写面板
-            inquirybool: false,
-            // 下拉加载
-        }
-    },
-    components: {
-        hurryItem,
-        Bottom
-    },
-    created(){
-        document.title = '急购区'
-    },
-    methods:{
-        showReal(){
-            this.release = false;
-            this.realbool = true;
-        },
-        hideReal(){
-            this.realbool = false;
-            this.release = true;
-        },
-        showInqu(){
-            this.release = false;
-            this.inquirybool = true;
-        },
-        hideInqu(){
-            this.inquirybool = false;
-            this.release = true;
-        },
-        onRefresh(){
-            console.log(1)
-        }
+  data () {
+    return {
+      hurryInfo: [
+        {model: '98575-2858', num: 10000, time: '上午 11:00', type: '1', user: '2'},
+        {model: '92575-2876', num: 10000, time: '上午 10:00', type: '2', user: '2'},
+        {model: '98375-2656', num: 10000, time: '上午 09:00', type: '1', user: '2'},
+        {model: '98575-5856', num: 10000, time: '上午 11:00', type: '2', user: '1'},
+        {model: '98755-4856', num: 10000, time: '上午 05:00', type: '2', user: '2'},
+        {model: '98565-2356', num: 10000, time: '上午 11:00', type: '1', user: '2'},
+        {model: '98775-2826', num: 10000, time: '下午 13:00', type: '2', user: '1'},
+        {model: '98875-2851', num: 10000, time: '上午 11:00', type: '1', user: '2'}
+      ],
+      // 底部点击发布栏
+      release: true,
+      // 实单信息填写面板
+      realbool: false,
+      // 询价信息填写面板
+      inquirybool: false
+      // 下拉加载
     }
+  },
+  components: {
+    hurryItem,
+    Bottom
+  },
+  created () {
+    document.title = '急购区'
+  },
+  methods: {
+    showReal () {
+      this.release = false
+      this.realbool = true
+    },
+    hideReal () {
+      this.realbool = false
+      this.release = true
+    },
+    showInqu () {
+      this.release = false
+      this.inquirybool = true
+    },
+    hideInqu () {
+      this.inquirybool = false
+      this.release = true
+    },
+    onRefresh () {
+      console.log(1)
+    }
+  }
 }
 </script>
 <style>
@@ -180,7 +180,7 @@ export default {
         font-size: 25px;
         color: #000
     }
-    .uphub-input>.input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
+    .uphub-input>.input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: rgba(255,255,255,0.7);
     }
     .shi-input {

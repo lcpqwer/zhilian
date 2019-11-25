@@ -19,7 +19,7 @@
             <div class="sea-warpper"></div>
             <UpItem v-for="(item,index) in XjList" :key="index" :UpItem="item" ItemType="xj"/>
         </div>
-       
+
         <Bottom/>
     </div>
 </template>
@@ -28,55 +28,55 @@ import Bottom from '../components/tohome1'
 import Top from '../components/my-upload/top'
 import UpItem from '../components/my-upload/upItem'
 export default {
-    data(){
-        return {
-            pag: 0,
-            // 未沟通数据
-            SdList:[
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-            ],
-            XjList:[
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-                {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
-            ]
-        }
-    },
-    components: {
-        Bottom,
-        Top,
-        UpItem
-    },
-    created(){
-        document.title = '我的发布'
-    },
-    methods: {
-        changePag(pag){
-           if (this.pag != pag){
-               this.pag == 0 ? this.pag = 1: this.pag = 0 
-            }
-        }
+  data () {
+    return {
+      pag: 0,
+      // 未沟通数据
+      SdList: [
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111}
+      ],
+      XjList: [
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111},
+        {model: '90575-1011', num: 10000, time: '2019年10月11日 上午 11:00', chat: 111}
+      ]
     }
+  },
+  components: {
+    Bottom,
+    Top,
+    UpItem
+  },
+  created () {
+    document.title = '我的发布'
+  },
+  methods: {
+    changePag (pag) {
+      if (this.pag != pag) {
+        this.pag == 0 ? this.pag = 1 : this.pag = 0
+      }
+    }
+  }
 }
 </script>
 <style scoped>

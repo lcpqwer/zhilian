@@ -6,10 +6,10 @@
                 <input class="input" v-model="name" placeholder="请输入姓名" type="text">
             </div>
             <div class="i-item imt">
-                <div class="title">联系电话</div> 
+                <div class="title">联系电话</div>
                 <input class="input" v-model="phone" @input="checkPhone" placeholder="请输入手机号" type="tel" maxlength="11">
             </div>
-            <div class="i-item imt">  
+            <div class="i-item imt">
                 <div class="title">城市/区域</div>
                 <input class="input" v-model="area" placeholder="请选择城市" disabled type="text">
             </div>
@@ -25,25 +25,25 @@
 <script>
 import Bottom from '../components/tohome1'
 export default {
-    data(){
-        return {
-            name: '',
-            phone: '',
-            area: '',
-            address: ''
-        }
-    },
-    created(){
-        document.title = '编辑地址'
-    },
-    components: {
-        Bottom
-    },
-    methods: {
-        checkPhone(){
-            
-        }
+  data () {
+    return {
+      name: '',
+      phone: '',
+      area: '',
+      address: ''
     }
+  },
+  created () {
+    document.title = '编辑地址'
+  },
+  components: {
+    Bottom
+  },
+  methods: {
+    checkPhone () {
+
+    }
+  }
 }
 </script>
 <style scoped>

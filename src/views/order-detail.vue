@@ -7,7 +7,7 @@
                 </div>
                 <div class="state2">
                     等待收货
-                </div>  
+                </div>
             </div>
             <div class="order-log">
                 <div class="dynamic"><div>包裹正在揽收</div></div>
@@ -30,7 +30,7 @@
         </div>
         <div class="shop-detail">
             <div class="three">
-                <div class="model">型号：98743-012</div> 
+                <div class="model">型号：98743-012</div>
                 <div class="price">&yen;9.3</div>
                 <div class="num">x1000</div>
             </div>
@@ -50,12 +50,12 @@
 <script>
 import Bottom from '../components/tohome1'
 export default {
-    created(){
-        document.title = '订单详情'
-    },
-    components: {
-        Bottom
-    }
+  created () {
+    document.title = '订单详情'
+  },
+  components: {
+    Bottom
+  }
 }
 </script>
 <style scoped>
@@ -175,7 +175,7 @@ export default {
         height: 125px;
         border-radius: 20px;
         position: relative;
-        font-size: 35px;   
+        font-size: 35px;
     }
     .three>.model {
         line-height: 125px

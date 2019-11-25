@@ -8,13 +8,13 @@
         </div>
     </div>
 </template>
-<script> 
+<script>
 export default {
-    methods: {
-        toUser(){
-            this.$router.push({path: '/User'})
-        }
+  methods: {
+    toUser () {
+      this.$router.push({path: '/User'})
     }
+  }
 }
 </script>
 <style scoped>

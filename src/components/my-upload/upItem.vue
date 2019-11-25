@@ -11,27 +11,27 @@
             <div class="h-text">已有{{UpItem.chat}}人和你沟通</div>
         </div>
     </div>
-   
+
 </template>
 <script>
 export default {
-    props: {
-        UpItem: Object,
-        ItemType: String,
-    },
-    methods: {
-        toSession(){
-            let _this = this
-            this.$store.state.SessionList.order = _this.UpItem
-            this.$router.push({
-                path: '/SessionList',
-                name: 'SessionList',
-                params: {
-                    order: _this.UpItem
-                }
-            })
+  props: {
+    UpItem: Object,
+    ItemType: String
+  },
+  methods: {
+    toSession () {
+      let _this = this
+      this.$store.state.SessionList.order = _this.UpItem
+      this.$router.push({
+        path: '/SessionList',
+        name: 'SessionList',
+        params: {
+          order: _this.UpItem
         }
+      })
     }
+  }
 }
 </script>
 <style scoped>
@@ -71,7 +71,7 @@ export default {
     }
     .sd {
         color: #f17f3a;
- 
+
     }
     .h-time{
         width: 100%;

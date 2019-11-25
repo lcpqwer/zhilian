@@ -12,35 +12,35 @@
                 </div>
                 <div class="htr-bottom" @click="changePag(2)">
                     <img class="main-img" src="../../assets/img/home/inventory.png" alt="">
-                    <div>发布库存</div> 
+                    <div>发布库存</div>
                 </div>
             </div>
         </div>
         <div class="homain-bottom" @click="changePag(3)">
             <img class="main-img" src="../../assets/img/home/business.png" alt="">
-            <div>我的商机</div> 
+            <div>我的商机</div>
         </div>
     </div>
 </template>
 <script>
 export default {
-    methods: {
-        changePag(index){
-            switch (index){
-                case 0:
-                    this.$router.push({path:'/Hurrybuy'})
-                    break
-                case 2:
-                    this.$router.push({path:'/MyInventory'})
-                    break
-                case 3:
-                    this.$router.push({path:'/Business'})
-                    break
-                default:
-                    this.$router.push({path:'/Mall'})
-            }
-        }
+  methods: {
+    changePag (index) {
+      switch (index) {
+        case 0:
+          this.$router.push({path: '/Hurrybuy'})
+          break
+        case 2:
+          this.$router.push({path: '/MyInventory'})
+          break
+        case 3:
+          this.$router.push({path: '/Business'})
+          break
+        default:
+          this.$router.push({path: '/Mall'})
+      }
     }
+  }
 }
 </script>
 <style>

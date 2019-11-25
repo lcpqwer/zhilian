@@ -5,7 +5,7 @@
             <div class="top"></div>
             <div v-for="(item, index) in shopList" :key="index" class="shop-warpper" v-if="item.num>0">
                 <div class="shop-model">
-                    <span>{{item.model}}</span> 
+                    <span>{{item.model}}</span>
                 </div>
                 <div class="shop-price">
                   <span>{{item.price}}</span>
@@ -30,56 +30,56 @@
 import Title from '../components/shop-car/title'
 import Bottom from '../components/tohome2'
 export default {
-    data(){
-        return {
-            shopList: [
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 1000, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 2000, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 1000, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-            ],
-        }
-    },
-    components: {
-        Title,
-        Bottom,
-    },
-    created(){
-        document.title = '立即购买'
-    },
-    methods: {
-        addNum(index){
-            this.shopList[index].num = parseInt(this.shopList[index].num) + 1
-        },
-        reduceNum(index){
-            this.shopList[index].num = parseInt(this.shopList[index].num) - 1
-        },
-        intNum(index){
-            // console.log(this.shopList[index].num)
-            let num = this.shopList[index].num
-            if (num != ''){
-                let numLs = num.match(/\d+/g)
-                this.shopList[index].num = ~~numLs.join('')
-            }
-            // console.log(this.shopList[index].num)
-        },
+  data () {
+    return {
+      shopList: [
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 1000, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 2000, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 1000, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3}
+      ]
     }
+  },
+  components: {
+    Title,
+    Bottom
+  },
+  created () {
+    document.title = '立即购买'
+  },
+  methods: {
+    addNum (index) {
+      this.shopList[index].num = parseInt(this.shopList[index].num) + 1
+    },
+    reduceNum (index) {
+      this.shopList[index].num = parseInt(this.shopList[index].num) - 1
+    },
+    intNum (index) {
+      // console.log(this.shopList[index].num)
+      let num = this.shopList[index].num
+      if (num != '') {
+        let numLs = num.match(/\d+/g)
+        this.shopList[index].num = ~~numLs.join('')
+      }
+      // console.log(this.shopList[index].num)
+    }
+  }
 }
 </script>
 <style scoped>
@@ -151,7 +151,7 @@ export default {
         width: 100%;
         height: 90px;
         position: fixed;
-        bottom: 0; 
+        bottom: 0;
     }
     .bottom-warpper>div {
         width: 100%;

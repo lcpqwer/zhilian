@@ -28,49 +28,49 @@ import Top from '../components/business/top'
 import HaveCom from '../components/business/have-com'
 import NoCom from '../components/business/no-com'
 export default {
-    data(){
-        return {
-            pag: 0,
-            // 未沟通数据
-            NcList:[
-                {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
-                {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
-                {model: '90575-1010', num: 10000, time: '上午 11:00', type: '0'},
-                {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
-                {model: '90575-1010', num: 10000, time: '上午 11:00', type: '0'},
-                {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
-                {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
-                {model: '90575-1010', num: 10000, time: '上午 11:00', type: '0'},
-                {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
-            ],
-            HcList:[
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '0', price: '9.6元'},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '0', price: '9.6元'},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '0', price: '9.6元'},
-                {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'},
-            ]
-        }
-    },
-    components: {
-        Bottom,
-        Top,
-        HaveCom,
-        NoCom
-    },
-    created(){
-        document.title = '商机'
-    },
-    methods: {
-        changePag(pag){
-            if (this.pag != pag){
-               this.pag == 0 ? this.pag = 1: this.pag = 0 
-            }
-        }
+  data () {
+    return {
+      pag: 0,
+      // 未沟通数据
+      NcList: [
+        {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
+        {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
+        {model: '90575-1010', num: 10000, time: '上午 11:00', type: '0'},
+        {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
+        {model: '90575-1010', num: 10000, time: '上午 11:00', type: '0'},
+        {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
+        {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'},
+        {model: '90575-1010', num: 10000, time: '上午 11:00', type: '0'},
+        {model: '90575-1010', num: 10000, time: '上午 11:00', type: '1'}
+      ],
+      HcList: [
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '0', price: '9.6元'},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '0', price: '9.6元'},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '0', price: '9.6元'},
+        {model: '90575-1010', num: 10000, time: '2019年10月11日 上午 11:00', type: '1', price: '9.6元'}
+      ]
     }
+  },
+  components: {
+    Bottom,
+    Top,
+    HaveCom,
+    NoCom
+  },
+  created () {
+    document.title = '商机'
+  },
+  methods: {
+    changePag (pag) {
+      if (this.pag != pag) {
+        this.pag == 0 ? this.pag = 1 : this.pag = 0
+      }
+    }
+  }
 }
 </script>
 <style scoped>

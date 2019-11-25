@@ -21,16 +21,16 @@
 </template>
 <script>
 export default {
-    data() {
-        return {
+  data () {
+    return {
 
-        }
-    },
-    created(){
-        document.title = '个人信息'
-    },
+    }
+  },
+  created () {
+    document.title = '个人信息'
+  }
 }
-</script> 
+</script>
 <style>
     /* .logitem-title {
         font-weight: normal

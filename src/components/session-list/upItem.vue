@@ -11,14 +11,14 @@
             <div class="h-text">已有{{UpItem.chat}}人和你沟通</div>
         </div>
     </div>
-   
+
 </template>
 <script>
 export default {
-    props: {
-        UpItem: Object,
-        ItemType: String,
-    }
+  props: {
+    UpItem: Object,
+    ItemType: String
+  }
 }
 </script>
 <style scoped>
@@ -64,7 +64,7 @@ export default {
     }
     .sd {
         color: #f17f3a;
- 
+
     }
     .h-time{
         width: 100%;

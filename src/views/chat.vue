@@ -6,7 +6,7 @@
                 <div class="ct-item">
                     型号: 98575-1010
                 </div>
-                <div class="ct-item">              
+                <div class="ct-item">
                     数量: 800
                 </div>
                 <div class="ct-item">
@@ -23,7 +23,7 @@
                 <div class="ct-item">
                     型号: 98575-1010
                 </div>
-                <div class="ct-item">              
+                <div class="ct-item">
                     数量: 800
                 </div>
                 <div class="ct-item">
@@ -58,36 +58,36 @@
 import Bottom from '../components/tohome1'
 import Message from '../components/chat/Message'
 export default {
-    data(){
-        return {
-            text: '',
-            mb: ''
-        }
-    },
-    components: {
-        Message,
-        Bottom
-    },
-    created(){
-        document.title = '98575-1010'
-    },
-    mounted(){
-        console.log(this.$refs.sendWarpper.clientHeight)
-        this.mb = 'height: '+(this.$refs.sendWarpper.clientHeight+10)+'px;'
-    },
-    methods: {
-        inputText(){
-            console.log(this.$refs.sendText.innerHTML)
-            this.text = this.$refs.sendText.innerHTML
-            console.log(this.$refs.sendWarpper.clientHeight)
-            this.mb = 'height: '+(this.$refs.sendWarpper.clientHeight+10)+'px;'
-            this.$refs.messageList.scrollTop = this.$refs.messageList.scrollHeight
-             this.$refs.sendText.scrollTop = this.$refs.sendText.scrollHeight
-        },
-        sendMessage(){
-            console.log(this.text)
-        }
+  data () {
+    return {
+      text: '',
+      mb: ''
     }
+  },
+  components: {
+    Message,
+    Bottom
+  },
+  created () {
+    document.title = '98575-1010'
+  },
+  mounted () {
+    console.log(this.$refs.sendWarpper.clientHeight)
+    this.mb = 'height: ' + (this.$refs.sendWarpper.clientHeight + 10) + 'px;'
+  },
+  methods: {
+    inputText () {
+      console.log(this.$refs.sendText.innerHTML)
+      this.text = this.$refs.sendText.innerHTML
+      console.log(this.$refs.sendWarpper.clientHeight)
+      this.mb = 'height: ' + (this.$refs.sendWarpper.clientHeight + 10) + 'px;'
+      this.$refs.messageList.scrollTop = this.$refs.messageList.scrollHeight
+      this.$refs.sendText.scrollTop = this.$refs.sendText.scrollHeight
+    },
+    sendMessage () {
+      console.log(this.text)
+    }
+  }
 }
 </script>
 <style scoped>

@@ -35,41 +35,39 @@
 <script>
 import Cropper from 'cropperjs'
 export default {
-    data(){
-        return {
-            avatar: ''
-        }
-    },
-    created(){
-        document.title = '个人信息'
-    },
-    methods: {
-        changePage(index){
-            switch(index){
-                case 1:
-                    this.$router.push({path: '/UpdateName'})
-                    break;
-                case 2:
-                    this.$router.push({path: '/ChangePhone'})
-                    break;
-                case 3:
-                    document.getElementById('upload').click()
-                    break;
-            }
-        },
-        upImg(event){
-            console.log(event)
-            let self = this;
-            let file = event.target.files[0];
-            let reader = new FileReader();
-            reader.readAsDataURL(file)
-            reader.onload = function(e) {
-                self.avatar = this.result
-            }
-
-
-        }
+  data () {
+    return {
+      avatar: ''
     }
+  },
+  created () {
+    document.title = '个人信息'
+  },
+  methods: {
+    changePage (index) {
+      switch (index) {
+        case 1:
+          this.$router.push({path: '/UpdateName'})
+          break
+        case 2:
+          this.$router.push({path: '/ChangePhone'})
+          break
+        case 3:
+          document.getElementById('upload').click()
+          break
+      }
+    },
+    upImg (event) {
+      console.log(event)
+      let self = this
+      let file = event.target.files[0]
+      let reader = new FileReader()
+      reader.readAsDataURL(file)
+      reader.onload = function (e) {
+        self.avatar = this.result
+      }
+    }
+  }
 }
 </script>
 <style scoped>
@@ -108,4 +106,3 @@ export default {
         right: 0;
     }
 </style>
-    

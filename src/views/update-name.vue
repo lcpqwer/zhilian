@@ -9,14 +9,14 @@
 </template>
 <script>
 export default {
-    data(){
-        return {
-            name: '顾芊'
-        }
-    },
-    created(){
-        document.title = '设置昵称'
+  data () {
+    return {
+      name: '顾芊'
     }
+  },
+  created () {
+    document.title = '设置昵称'
+  }
 }
 </script>
 <style scoped>

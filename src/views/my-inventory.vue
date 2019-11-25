@@ -15,50 +15,50 @@ import inItem from '../components/inventory/inventoty-item'
 import Bottom from '../components/tohome2'
 import Btn from '../components/inventory/inventory-bottom'
 export default {
-    data() {
-        return {
-            inData: [
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000},
-                {model: '936139-1', price: 9.3, num: 2000}
-            ]
-        }
-    },
-    components:{
-        inSearch,
-        inTitle,
-        inItem,
-        Bottom,
-        Btn
-    },
-    created(){
-        document.title = '我的库存'
+  data () {
+    return {
+      inData: [
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000},
+        {model: '936139-1', price: 9.3, num: 2000}
+      ]
     }
+  },
+  components: {
+    inSearch,
+    inTitle,
+    inItem,
+    Bottom,
+    Btn
+  },
+  created () {
+    document.title = '我的库存'
+  }
 }
 </script>
 <style>

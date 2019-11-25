@@ -28,27 +28,27 @@ import Top from '../components/session-list/top'
 import Card from '../components/session-list/upItem'
 import Bottom from '../components/tohome1'
 export default {
-    data(){
-        return {
-            type: null,
-            item: '',
-            seList: [1,2,3,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,]
-        }
-    },
-    created(){
-        document.title = '消息列表'
-        this.item = this.$store.state.SessionList.order
-    },
-    components: {
-        Top,
-        Card,
-        Bottom
-    },
-    methods: {
-        toChat(){
-            this.$router.push({path: '/Chat'})
-        }
+  data () {
+    return {
+      type: null,
+      item: '',
+      seList: [1, 2, 3, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     }
+  },
+  created () {
+    document.title = '消息列表'
+    this.item = this.$store.state.SessionList.order
+  },
+  components: {
+    Top,
+    Card,
+    Bottom
+  },
+  methods: {
+    toChat () {
+      this.$router.push({path: '/Chat'})
+    }
+  }
 }
 </script>
 <style scoped>
@@ -118,5 +118,5 @@ export default {
         background-color: red;
         font-size: 10px;
     }
-    
+
 </style>

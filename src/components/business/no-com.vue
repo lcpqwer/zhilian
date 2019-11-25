@@ -14,9 +14,9 @@
 </template>
 <script>
 export default {
-    props: {
-        NcItem: Object 
-    }
+  props: {
+    NcItem: Object
+  }
 }
 </script>
 <style scoped>
@@ -57,7 +57,7 @@ export default {
     }
     .sd {
         color: #f17f3a;
- 
+
     }
     .h-time{
         width: 100%;

@@ -20,20 +20,20 @@
 </template>
 <script>
 export default {
-    props: {
-        OrderItem: Object
+  props: {
+    OrderItem: Object
+  },
+  methods: {
+    orderDetail () {
+      this.$router.push({path: '/OrderDetail'})
     },
-    methods: {
-        orderDetail(){
-            this.$router.push({path: '/OrderDetail'})
-        },
-        checkLog(){
-            console.log(1)
-        },
-        confirmGood(){
-            console.log(2)
-        }
+    checkLog () {
+      console.log(1)
+    },
+    confirmGood () {
+      console.log(2)
     }
+  }
 }
 </script>
 <style scoped>

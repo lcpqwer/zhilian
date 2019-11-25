@@ -6,7 +6,7 @@
             <div class="top"></div>
             <div v-for="(item, index) in shopList" :key="index" class="shop-warpper">
                 <div class="shop-model">
-                    <span :class="{'num-color': item.num>0}">{{item.model}}</span> 
+                    <span :class="{'num-color': item.num>0}">{{item.model}}</span>
                 </div>
                 <div class="shop-price">
                   <span :class="{'num-color': item.num>0}">{{item.price}}</span>
@@ -35,76 +35,75 @@ import Top from '../components/mall/top'
 import Title from '../components/mall/title'
 import Bottom from '../components/tohome2'
 export default {
-    data(){
-        return {
-            shopList: [
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-                {model: '90575-1010', num: 0, price: 9.3},
-            ],
-            pag: 1,
-            pagTotal: 30
-        }
-    },
-    components: {
-        Top,
-        Title,
-        Bottom
-    },
-    created(){
-        document.title = '自营商城'
-    },
-    methods: {
-        addNum(index){
-            this.shopList[index].num = parseInt(this.shopList[index].num) + 1
-        },
-        reduceNum(index){
-            this.shopList[index].num = parseInt(this.shopList[index].num) - 1
-        },
-        pagUp(){
-            if (this.pag != 1){
-                this.pag -= 1
-            }
-        },
-        pagDown(){
-            if (this.pag != this.pagTotal){
-                this.pag += 1
-            }
-        },
-        intNum(index){
-            // console.log(this.shopList[index].num)
-            let num = this.shopList[index].num
-            if (num != ''){
-                let numLs = num.match(/\d+/g)
-                this.shopList[index].num = ~~numLs.join('')
-            }
-            
-            
-            // console.log(this.shopList[index].num)
-        },
-        shopCar(){
-            this.$router.push({
-                path: '/ShopCar'
-            })
-        }
+  data () {
+    return {
+      shopList: [
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3},
+        {model: '90575-1010', num: 0, price: 9.3}
+      ],
+      pag: 1,
+      pagTotal: 30
     }
+  },
+  components: {
+    Top,
+    Title,
+    Bottom
+  },
+  created () {
+    document.title = '自营商城'
+  },
+  methods: {
+    addNum (index) {
+      this.shopList[index].num = parseInt(this.shopList[index].num) + 1
+    },
+    reduceNum (index) {
+      this.shopList[index].num = parseInt(this.shopList[index].num) - 1
+    },
+    pagUp () {
+      if (this.pag != 1) {
+        this.pag -= 1
+      }
+    },
+    pagDown () {
+      if (this.pag != this.pagTotal) {
+        this.pag += 1
+      }
+    },
+    intNum (index) {
+      // console.log(this.shopList[index].num)
+      let num = this.shopList[index].num
+      if (num != '') {
+        let numLs = num.match(/\d+/g)
+        this.shopList[index].num = ~~numLs.join('')
+      }
+
+      // console.log(this.shopList[index].num)
+    },
+    shopCar () {
+      this.$router.push({
+        path: '/ShopCar'
+      })
+    }
+  }
 }
 </script>
 <style scoped>

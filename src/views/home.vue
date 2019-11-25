@@ -5,44 +5,38 @@
     <homeMain/>
     <div class="h-entrust-title">委托找料</div>
     <entrustItem v-for="(item, index) in entrus" :key="index" :entrust="item"/>
-    <div class="home-advices">
-        <div>
-           消息
-           <div class="had-red"></div> 
-        </div>
-    </div>
 </div>
-    
+
 </template>
 <script>
 import headSearch from '../components/home/home-search'
 import homeMain from '../components/home/home-main'
 import entrustItem from '../components/home/entrust-item'
 export default {
-    data() {
-        return {
-            entrus: [{name: '供应商1', head: '../../assets/img/login/userhead.png', point: 1, level: 3},
-                    {name: '供应商2', head: '../../assets/img/login/userhead.png', point: 4, level: 2},
-                    {name: '供应商3', head: '../../assets/img/login/userhead.png', point: 5, level: 5},
-                    {name: '供应商4', head: '../../assets/img/login/userhead.png', point: 5, level: 4},
-                    {name: '供应商1', head: '../../assets/img/login/userhead.png', point: 1, level: 3},
-                    {name: '供应商2', head: '../../assets/img/login/userhead.png', point: 4, level: 2},
-                    {name: '供应商3', head: '../../assets/img/login/userhead.png', point: 5, level: 5},
-                    {name: '供应商4', head: '../../assets/img/login/userhead.png', point: 5, level: 4},
-                    {name: '供应商5', head: '../../assets/img/login/userhead.png', point: 2, level: 5}]
-        }
-    },
-    created() {
-        document.title = '联置科技'
-    },
-    components: {
-        headSearch,
-        homeMain,
-        entrustItem
-    },
-    methods: {
-
+  data () {
+    return {
+      entrus: [{name: '供应商1', head: '../../assets/img/login/userhead.png', point: 1, level: 3},
+        {name: '供应商2', head: '../../assets/img/login/userhead.png', point: 4, level: 2},
+        {name: '供应商3', head: '../../assets/img/login/userhead.png', point: 5, level: 5},
+        {name: '供应商4', head: '../../assets/img/login/userhead.png', point: 5, level: 4},
+        {name: '供应商1', head: '../../assets/img/login/userhead.png', point: 1, level: 3},
+        {name: '供应商2', head: '../../assets/img/login/userhead.png', point: 4, level: 2},
+        {name: '供应商3', head: '../../assets/img/login/userhead.png', point: 5, level: 5},
+        {name: '供应商4', head: '../../assets/img/login/userhead.png', point: 5, level: 4},
+        {name: '供应商5', head: '../../assets/img/login/userhead.png', point: 2, level: 5}]
     }
+  },
+  created () {
+    document.title = '联置科技'
+  },
+  components: {
+    headSearch,
+    homeMain,
+    entrustItem
+  },
+  methods: {
+
+  }
 }
 </script>
 <style>
