@@ -2,11 +2,11 @@
     <div class="body">
         <hurryItem v-for="(item,index) in hurryInfo" :key="index" :hurryInfo="item"/>
         <div class="hub"></div>
-        <div v-if="release" class="hub-bottom">
+        <div v-show="release" class="hub-bottom">
             <div class="hub-item shi" @click="showReal">实单</div>
             <div class="hub-item xun" @click="showInqu">询价</div>
         </div>
-        <div v-if="realbool" class="uphub-warpper shi">
+        <div v-show="realbool" class="uphub-warpper shi">
             <div class="uphub-title">
                 实单
                 <img @click="hideReal" class="uphub-img" src="../assets/img/hurrybuy/hide.png" alt="">
@@ -27,7 +27,7 @@
                 <button class="sub shi-sub">发送</button>
             </div>
         </div>
-        <div v-if="inquirybool" class="uphub-warpper xun">
+        <div v-show="inquirybool" class="uphub-warpper xun">
             <div class="uphub-title">
                 询价
                 <img @click="hideInqu" class="uphub-img" src="../assets/img/hurrybuy/hide.png" alt="">
@@ -48,10 +48,12 @@
                 <button class="sub xun-sub">发送</button>
             </div>
         </div>
+        <Bottom/>
     </div>
 </template>
 <script>
 import hurryItem from '../components/hurrybuy/hurrybuy-item'
+import Bottom from '../components/tohome2'
 export default {
     data(){
         return {
@@ -75,7 +77,8 @@ export default {
         }
     },
     components: {
-        hurryItem
+        hurryItem,
+        Bottom
     },
     created(){
         document.title = '急购区'

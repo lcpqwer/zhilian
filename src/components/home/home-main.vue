@@ -36,6 +36,8 @@ export default {
                 case 3:
                     this.$router.push({path:'/Business'})
                     break
+                default:
+                    this.$router.push({path:'/Mall'})
             }
         }
     }
@@ -43,7 +45,7 @@ export default {
 </script>
 <style>
     .home-main {
-        width: 100%;
+        width: 670px;
         /* height: 610px; */
         display: flex;
         flex-direction: column;

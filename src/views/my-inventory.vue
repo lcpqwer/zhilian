@@ -4,14 +4,16 @@
     <inTitle/>
     <div class="in-top"></div>
     <inItem v-for="(item,index) in inData" :key="index" :inItem="item"/>
-    <inBottom/>
+    <Bottom/>
+    <Btn/>
 </div>
 </template>
 <script>
 import inSearch from '../components/inventory/inventory-search'
 import inTitle from '../components/inventory/inventory-title'
 import inItem from '../components/inventory/inventoty-item'
-import inBottom from '../components/inventory/inventory-bottom'
+import Bottom from '../components/tohome2'
+import Btn from '../components/inventory/inventory-bottom'
 export default {
     data() {
         return {
@@ -51,7 +53,8 @@ export default {
         inSearch,
         inTitle,
         inItem,
-        inBottom
+        Bottom,
+        Btn
     },
     created(){
         document.title = '我的库存'

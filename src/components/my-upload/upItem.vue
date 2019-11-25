@@ -1,34 +1,48 @@
 <template>
-    <div class="item-warpper">
+     <div @click="toSession()" class="item-warpper">
         <div class="h-top">
-            <div class="h-model">型号：{{NcItem.model}}</div>
-            <div class="h-num">数量：{{NcItem.num}}</div>
-            <div v-if="NcItem.type == '1'" class="h-type sd">实单</div>
+            <div class="h-model">型号：{{UpItem.model}}</div>
+            <div class="h-num">数量：{{UpItem.num}}</div>
+            <div v-if="ItemType == 'sd'" class="h-type">实单</div>
             <div v-else class="h-type">询价</div>
         </div>
         <div class="h-time">
-            {{NcItem.time}}
-            <div class="h-text">未沟通</div>
+            {{UpItem.time}}
+            <div class="h-text">已有{{UpItem.chat}}人和你沟通</div>
         </div>
     </div>
+   
 </template>
 <script>
 export default {
     props: {
-        NcItem: Object 
+        UpItem: Object,
+        ItemType: String,
+    },
+    methods: {
+        toSession(){
+            let _this = this
+            this.$store.state.SessionList.order = _this.UpItem
+            this.$router.push({
+                path: '/SessionList',
+                name: 'SessionList',
+                params: {
+                    order: _this.UpItem
+                }
+            })
+        }
     }
 }
 </script>
 <style scoped>
     .item-warpper {
-        width: 100%;
+        width: 670px;
         height: 188px;
         box-shadow: 0px 0px 10px 10px #e9e9e9;
         border-radius: 10px;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
-        background-color: #fff;
     }
     .h-top {
         /* width: 100%;

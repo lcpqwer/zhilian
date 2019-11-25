@@ -25,7 +25,10 @@ export default {
         return {
 
         }
-    }
+    },
+    created(){
+        document.title = '个人信息'
+    },
 }
 </script> 
 <style>

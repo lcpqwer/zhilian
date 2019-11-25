@@ -35,6 +35,7 @@ export default {
         box-shadow: 0px 0px 10px 10px #f8f8f8;
         border-radius: 15px;
         position: relative;
+        background-color: #fff;
     }
     .ent-head {
         width: 100px;

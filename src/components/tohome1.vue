@@ -1,9 +1,5 @@
 <template>
-<div>
-    <div class="in-message in-mes">消息</div>
     <div class="in-home in-hom">首页</div>
-</div>
-    
 </template>
 <script>
 export default {
@@ -11,7 +7,7 @@ export default {
 }
 </script>
 <style scoped>
-    .in-message, .in-home {
+    .in-home {
         width: 60px;
         height: 60px;
         background-color: rgba(0,0,0,0.5);
@@ -23,12 +19,6 @@ export default {
         position: fixed;
         right: 40px;
         z-index: 10;
-    }
-    .in-mes {
-        bottom: 120px;
-        
-    }
-    .in-hom {
         bottom: 40px;
     }
 </style>

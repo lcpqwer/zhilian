@@ -27,14 +27,17 @@
             <button class="ba-left">批量上传</button>
             <button class="ba-right">下载批量模板</button>
         </div>
-        <div class="in-message in-mes">消息</div>
-        <div class="in-home in-hom">首页</div>
+        <Bottom/>
     </div>   
 </template>
 <script>
+import Bottom from '../components/tohome1'
 export default {
     created(){
         document.title = '发布库存'
+    },
+    components: {
+        Bottom
     }
 }
 </script>
@@ -121,7 +124,7 @@ export default {
         border-radius: 10px;
         position: absolute;
         margin-top: 125px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     .ba-left {
         width: 208px;
@@ -133,25 +136,5 @@ export default {
         width: 273px;
         background-color: #f17f3a;
         right: 40px;
-    }
-    .in-message, .in-home {
-        width: 60px;
-        height: 60px;
-        background-color: rgba(0,0,0,0.5);
-        text-align: center;
-        line-height: 60px;
-        color: #ffffff;
-        font-size: 20px;
-        border-radius: 50%;
-        position: fixed;
-        right: 40px;
-        z-index: 10;
-    }
-    .in-mes {
-        bottom: 120px;
-        
-    }
-    .in-hom {
-        bottom: 40px;
     }
 </style>

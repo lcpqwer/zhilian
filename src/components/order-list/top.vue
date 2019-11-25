@@ -28,7 +28,7 @@ export default {
         background-color: #fff;
         z-index: 10;
     }
-    .sea-main.div {
+    .sea-main>div:first-child {
         width: 100%;
         height: 100%;
         position: relative;
@@ -39,12 +39,12 @@ export default {
         left: 50%;
         transform: translate(-50%,-50%);
         background-color: #f6f8f4;
-        padding-left: 78px;
-        padding-right: 130px;
-        width: 470px;
+        width: 460px;
         height: 64px;
         border-radius: 10px;
         /* text-indent: 78px; */
+        padding-left: 78px;
+        padding-right: 132px;
         font-size: 25px;
     }
     .sea-img {

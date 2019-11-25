@@ -12,7 +12,7 @@ export default {
 </script>
 <style scoped>
     .in-title {
-        width: 670px;
+        width: 680px;
         padding: 0 40px;
         height: 75px;
         position: fixed;
@@ -24,10 +24,18 @@ export default {
         z-index: 10;
     }
     .in-title>div {
-        width: 100%;
         height: 100%;
         line-height: 75px;
         text-align: center;
         font-size: 25px;
+    }
+    .in-title>div:nth-child(1) {
+        width: 180px;
+    }
+    .in-title>div:nth-child(2) {
+        width: 220px;
+    }
+    .in-title>div:nth-child(3) {
+        width: 280px;
     }
 </style>

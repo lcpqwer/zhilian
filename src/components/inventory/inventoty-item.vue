@@ -16,9 +16,9 @@ export default {
 </script>
 <style>
     .in-item {
-        width: 100%;
+        width: 670px;
         height: 80px;
-        /* padding: 0 40px; */
+        padding: 0 40px;
         display: flex;
         flex-direction: row;
     }

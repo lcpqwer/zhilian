@@ -4,7 +4,6 @@
         <div>
             <input type="text" class="sea-input" placeholder="搜索型号">
             <img src="../../assets/img/home/search.png" class="sea-img" alt="">
-            <div class="se-btn">搜索</div>
         </div>
     </div>
 <!-- </div> -->
@@ -39,12 +38,10 @@ export default {
         left: 50%;
         transform: translate(-50%,-50%);
         background-color: #f6f8f4;
-        padding-left: 78px;
-        padding-right: 130px;
-        width: 470px;
+        width: 670px;
         height: 64px;
         border-radius: 10px;
-        /* text-indent: 78px; */
+        text-indent: 78px;
         font-size: 25px;
     }
     .sea-img {
@@ -54,20 +51,5 @@ export default {
         top: 50%;
         transform: translateY(-50%);
         left:58px;
-    }
-    .se-btn {
-        height: 64px;
-        width: 120px;
-        background-color: #f6b243;
-        position: absolute;
-        top: 50%;
-        right: 40px;
-        transform: translateY(-50%);
-        color: white;
-        line-height: 64px;
-        text-align: center;
-        font-size: 30px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
 </style>

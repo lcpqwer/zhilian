@@ -15,6 +15,16 @@ import User from '../views/User'
 import MyInfo from '../views/my-info'
 import ChangePhone from '../views/change-phone'
 import Business from '../views/Business'
+import Chat from '../views/Chat'
+import MyUpload from '../views/my-upload'
+import SessionList from '../views/session-list'
+import Mall from '../views/Mall'
+import ShopCar from '../views/shop-car'
+import OrderList from '../views/order-list'
+import OrderDetail from '../views/order-detail'
+import MyAddress from '../views/my-address'
+import EditAddress from '../views/edit-address.vue'
+import UpdateName from '../views/update-name'
 export default new Router({
   routes: [
     {path: '/', component: Register},
@@ -29,5 +39,15 @@ export default new Router({
     {path: '/MyInfo', component: MyInfo},
     {path: '/ChangePhone', component: ChangePhone},
     {path: '/Business', component: Business},
+    {path: '/Chat', component: Chat},
+    {path: '/MyUpload', component: MyUpload},
+    {path: '/SessionList', name: 'SessionList', component: SessionList},
+    {path: '/Mall', component: Mall},
+    {path: '/ShopCar', component: ShopCar},
+    {path: '/OrderList', component: OrderList},
+    {path: '/OrderDetail', component: OrderDetail},
+    {path: '/MyAddress', component: MyAddress},
+    {path: '/EditAddress', component: EditAddress},
+    {path: '/UpdateName', component: UpdateName},
   ]
 })

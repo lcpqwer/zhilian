@@ -39,9 +39,9 @@ export default {
         left: 50%;
         transform: translate(-50%,-50%);
         background-color: #f6f8f4;
+        width: 472px;
         padding-left: 78px;
         padding-right: 130px;
-        width: 470px;
         height: 64px;
         border-radius: 10px;
         /* text-indent: 78px; */

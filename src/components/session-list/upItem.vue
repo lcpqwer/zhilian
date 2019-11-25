@@ -1,49 +1,57 @@
 <template>
-    <div class="item-warpper" @click="toChat">
+     <div class="item-warpper">
         <div class="h-top">
-            <div class="h-model">型号：{{HcItem.model}}</div>
-            <div class="h-num">数量：{{HcItem.num}}</div>
-            <div class="h-num">未税单价：{{HcItem.price}}</div>
-            <div v-if="HcItem.type == '1'" class="h-type sd">实单</div>
+            <div class="h-model">型号：{{UpItem.model}}</div>
+            <div class="h-num">数量：{{UpItem.num}}</div>
+            <div v-if="ItemType == 'sd'" class="h-type">实单</div>
             <div v-else class="h-type">询价</div>
         </div>
         <div class="h-time">
-            {{HcItem.time}}
-            <div class="h-text">已沟通</div>
+            {{UpItem.time}}
+            <div class="h-text">已有{{UpItem.chat}}人和你沟通</div>
         </div>
     </div>
+   
 </template>
 <script>
 export default {
     props: {
-        HcItem: Object 
-    },
-    methods: {
-        toChat(){
-            this.$router.push({path: '/Chat'})
-        }
+        UpItem: Object,
+        ItemType: String,
     }
 }
 </script>
 <style scoped>
     .item-warpper {
-        width: 100%;
-        height: 237px;
+        width: 670px;
+        height: 188px;
         box-shadow: 0px 0px 10px 10px #e9e9e9;
         border-radius: 10px;
-        margin-top: 20px;
+        /* margin-top: 20px; */
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 110px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
         background-color: #fff;
     }
     .h-top {
+        /* width: 100%;
+        height: 132px; */
         position: relative;
     }
-    .h-model, .h-price {
-        padding-top: 25px;
+    .h-model {
+        width: 100%;
+        height: 78px;
+        line-height: 78px;
         font-size: 27px;
         text-indent: 45px;
     }
     .h-num {
-        padding-top: 25px;
+        width: 100%;
+        height: 54px;
         font-size: 27px;
         text-indent: 45px;
     }
@@ -55,12 +63,13 @@ export default {
         right: 40px;
     }
     .sd {
-        color: #f17f3a 
+        color: #f17f3a;
+ 
     }
     .h-time{
         width: 100%;
-        height: 80px;
-        line-height: 80px;
+        height: 56px;
+        line-height: 56px;
         text-indent: 45px;
         color: #cacaca;
         position: relative;

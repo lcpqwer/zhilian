@@ -12,41 +12,66 @@
             </div>
         </div>
         <div class="user-top">
-            <img @click="toMyInfo" src="../assets/img/login/userhead.png" alt="">
+            <img @click="userClick(0)" src="../assets/img/login/userhead.png" alt="">
             <div>顾芊</div>
         </div>
         <div class="user-main">
-            <div class="user-item">
+            <div @click="userClick(1)" class="user-item">
                 <div>我的库存</div>
                 <img src="../assets/img/user/route.png" alt="">
             </div>
-            <div class="user-item">
+            <div @click="userClick(2)" class="user-item">
                 <div>我的订单</div>
                 <img src="../assets/img/user/route.png" alt="">
             </div>
-            <div class="user-item">
+            <div @click="userClick(3)" class="user-item">
                 <div>我的历史发布</div>
                 <img src="../assets/img/user/route.png" alt="">
             </div>
-            <div class="user-item">
-                <div>我的聊天</div>
+            <div @click="userClick(4)" class="user-item">
+                <div>我的商机</div>
                 <img src="../assets/img/user/route.png" alt="">
             </div>
-            <div class="user-item">
+            <div @click="userClick(5)" class="user-item">
                 <div>我的地址</div>
                 <img src="../assets/img/user/route.png" alt="">
             </div>
         </div>
+        <Bottom/>
     </div>
 </template>
 <script>
+import Bottom from '../components/tohome1'
 export default {
     created(){
         document.title = '个人信息'
     },
+    components: {
+        Bottom
+    },
     methods: {
-        toMyInfo(){
-            this.$router.push({path: '/MyInfo'})
+        userClick(index){
+            switch(index){
+                case 0:
+                    this.$router.push({path: '/MyInfo'})
+                    break;
+                case 1:
+                    this.$router.push({path: '/MyInventory'})
+                    break;
+                case 2:
+                    this.$router.push({path: '/OrderList'})
+                    break; 
+                case 3:
+                    this.$router.push({path: '/MyUpload'})
+                    break;
+                case 4:
+                    this.$router.push({path: '/Business'})
+                    break;  
+                case 5:
+                    this.$router.push({path: '/MyAddress'})
+                    break;
+            }
+            
         }
     }
 }
@@ -83,7 +108,7 @@ export default {
         margin-left: 12px;
     }
     .user-top {
-        width: 680px;
+        width: 670px;
         height: 170px;
         padding: 0 40px;
         position: relative;

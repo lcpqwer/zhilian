@@ -1,12 +1,12 @@
 <template>
     <div class="myinfo">
         <input @change="upImg" style="display: none" id="upload" type="file" accept="image/*" class="abc">
-        <div class="info-item item-one" @click="changePge(3)">
+        <div class="info-item item-one">
             <div class="info-left">头像</div>
             <img class="info-center head" src="../assets/img/login/userhead.png" alt="">
             <img class="info-right" src="../assets/img/user/route.png" alt="">
         </div>
-        <div class="info-item"  @click="changePge(1)">
+        <div class="info-item"  @click="changePage(1)">
             <div class="info-left">昵称</div>
             <div class="info-center">顾芊</div>
             <img class="info-right" src="../assets/img/user/route.png" alt="">
@@ -47,7 +47,7 @@ export default {
         changePage(index){
             switch(index){
                 case 1:
-
+                    this.$router.push({path: '/UpdateName'})
                     break;
                 case 2:
                     this.$router.push({path: '/ChangePhone'})
@@ -74,7 +74,7 @@ export default {
 </script>
 <style scoped>
     .myinfo {
-        width: 680px;
+        width: 670px;
         padding: 0 40px;
     }
     .info-item {

@@ -4,6 +4,7 @@
             <input class="se-input" type="text" placeholder="请输入型号">
             <img model="widthFix" class="sea-img" src="../../assets/img/home/search.png" alt="">
             <img class="home-user" @click="toUser" src="../../assets/img/home/user.png" model="widthFix" alt="">
+            <div class="se-btn">搜索</div>
         </div>
     </div>
 </template>
@@ -16,7 +17,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
     .sea {
         height: 143px;
         width: 750px;
@@ -34,9 +35,12 @@ export default {
         position: relative;
     }
     .se-input {
-        height: 64px;
-        width:  500px;
+        height: 30px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        width:  370px;
         padding-left: 80px;
+        padding-right: 130px;
         background-color: #f8f6f4;
         border: none;
         font-size: 30px;
@@ -60,5 +64,20 @@ export default {
         right: 40px;
         transform: translateY(-50%);
         width: 53px;
+    }
+    .se-btn {
+        height: 64px;
+        width: 120px;
+        background-color: #f6b243;
+        position: absolute;
+        top: 50%;
+        left: 500px;
+        transform: translateY(-50%);
+        color: white;
+        line-height: 64px;
+        text-align: center;
+        font-size: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 </style>
